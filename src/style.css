@@ -4,9 +4,74 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('/code/src/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('/code/src/fonts/Montserrat-Regular.ttf');
+}
+
 body {
   padding: 0;
   margin: 0;
   --red: #67131c;
   --grey: #d3d3d3;
+  --fontreg: Montserrat-Regular;
+  --fontbold: Montserrat-Bold;
+  background: url('/code/src/img/firstfold.png') center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 300px;
+  margin: auto;
+}
+
+/* LOGO */
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: url('/code/src/img/termicasoluciones-logo-color.png') center
+    no-repeat white;
+  background-size: 124px;
+  margin: 30px auto 0 auto;
+}
+
+/* IG Handle */
+.ighandle {
+  text-align: center;
+  font-family: var(--fontbold);
+  color: white;
+}
+
+/* Buttons Sections & Buttons*/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 65px;
+  background: var(--red);
+  color: var(--grey);
+  font-family: var(--fontreg);
+  text-decoration: none;
+  box-shadow: -5px 5px 0 rgba(103, 19, 28, 0.3);
+}
+
+.link + .link {
+  margin-top: 25px;
 }
