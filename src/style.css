@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('.../fonts/Montserrat-Bold.ttf');
+  src: url('./fonts/Montserrat-Bold.ttf');
 }
 
 @font-face {
@@ -21,7 +21,7 @@ body {
   --grey: #d3d3d3;
   --fontreg: Montserrat-Regular;
   --fontbold: Montserrat-Bold;
-  background: url('/img/firstfold.png') center no-repeat;
+  background: url('./img/firstfold.png') center no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
@@ -37,7 +37,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: url('/img/termicasoluciones-logo-color.png') center no-repeat
+  background: url('./img/termicasoluciones-logo-color.png') center no-repeat
     white;
   background-size: 124px;
   margin: 30px auto 0 auto;
